@@ -1,0 +1,4 @@
+node_modules
+/upload.log
+/temp.list.txt
+dist
