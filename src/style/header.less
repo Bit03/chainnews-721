@@ -20,6 +20,23 @@ header {
   nav, li {
     background: @c-dark;
   }
+  .header-left {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    a {
+      font-size: 22px;
+      color: @c-light;
+      span {
+        padding: 3px 3px;
+
+        background: @c-light;
+
+        color: @c-dark;
+      }
+    }
+  }
   .header-right {
     display: flex;
 
@@ -40,6 +57,11 @@ header {
 @media screen and (max-width: 999px) {
   header {
     height: 50px;
+    .header-left {
+      a {
+        display: none;
+      }
+    }
     nav {
       position: absolute;
       top: 100%;
@@ -89,6 +111,10 @@ header {
     }
   }
 }
+
 .hidden {
+  display: none;
+}
+.v-hidden {
   visibility: hidden;
 }

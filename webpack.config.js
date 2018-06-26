@@ -11,8 +11,8 @@ module.exports = {
     main: './src/main.js'
   },
   output: {
-    publicPath: 'https://star2018.chainnews.com/',
-    // publicPath: '/',
+    // publicPath: 'https://star2018.chainnews.com/',
+    publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
     filename: 'topic/js/[name].[chunkhash].js',
   },

@@ -47,5 +47,15 @@ addListener(document, 'DOMContentLoaded', function () {
       }
     }
   })
-
+  var showHeaderLogo = false
+  addListener(window,'scroll',function(e){
+    console.log(document.documentElement.scrollTop )
+    if(document.documentElement.scrollTop > 1000 && showHeaderLogo === false){
+      document.getElementById("header-logo").classList.remove("hidden")
+      showHeaderLogo = true
+    } else if(document.documentElement.scrollTop <= 1000 && showHeaderLogo){
+      document.getElementById("header-logo").classList.add("hidden")
+      showHeaderLogo = false
+    }
+  })
 })

@@ -7,7 +7,11 @@ html(lang='cmn')
     title 中美创投峰会区块链论坛
   body
     header
-      #menu_button.icon-menu.hidden
+      div.header-left
+        #menu_button.icon-menu.hidden
+        a#header-logo.hidden(href='#top') 
+          | 中美创投峰会 
+          span 区块链论坛
       div.header-right
         nav#menu_list
           ul
@@ -22,7 +26,7 @@ html(lang='cmn')
             li 
               a(href='#partners') 媒体合作
         a.btn-base(href='http://blockstech6.baiduux.com/h5/794f6ef9-d4b5-4835-2219-6d7091e9a5ce.html?channelid=f8400fea1f0eb8a1') 即刻报名      
-    section.banner
+    section#top.banner
       img.bg-1(src="./image/bg-1.jpg")
       img.bg-2(src='./image/bg-2.jpg')
       .s-wrap
@@ -48,7 +52,7 @@ html(lang='cmn')
     section.desc
       .s-wrap
         p 未来已来，一个全新世界等待创投先锋深入探索。
-        p 金融科技专业资讯平台链闻，携手传播中国声音的权威媒体人民网，拥抱全新的商业未来，在美国硅谷联合组织“中美创投峰会之区块链论坛”，以「区块赋能 链接未来」为主题，聚焦区块链前沿技术创新，展望区块链这项创新技术推动下，创业与投资带来的巨大变革。
+        p 金融科技专业资讯平台链闻，携手传播中国声音的权威媒体人民网，拥抱全新的商业未来，在美国硅谷联合组织"中美创投峰会之区块链论坛"，以「区块赋能 链接未来」为主题，聚焦区块链前沿技术创新，展望区块链这项创新技术推动下，创业与投资带来的巨大变革。
         p 此次峰会核心主题旨在区块链技术的分享和应用，同时加强全球区块链行业从业者们的合作与交流，推动全球区块链科技行业运用的潜力与发展，帮助区块链创新创业精英与资本方对接，加速区块链生态化应用的落地。
 
     section#points.points
@@ -255,24 +259,24 @@ html(lang='cmn')
     section#partners.partners
       .s-wrap
         h3.s-title 媒体合作
-        img(src="./image/partners.png", alt="")
+        img(src="./image/partners.png", alt="媒体合作")
         
     section.contact
       .s-wrap
         h3.s-title 联系我们
         ul
           li
-            img(src="./image/qrcode-bd.jpg", alt="")
+            img(src="./image/qrcode-bd.jpg", alt="商务合作")
             h4 商务合作
             p 微信：17764476940
             p 邮箱：bd@blocks.tech
           li
-            img(src="./image/qrcode-lixin.jpg", alt="")
+            img(src="./image/qrcode-rui.jpg", alt="媒体合作")
             h4 媒体合作
             p 微信：545296575
             p 邮箱：ruuii@blocks.tech
           li
-            img(src="./image/qrcode-rui.jpg", alt="")
+            img(src="./image/qrcode-lixin.jpg", alt="会议合作")
             h4 会议合作
             p 微信：caolixincaolixin
             p 邮件：clx@blocks.tech

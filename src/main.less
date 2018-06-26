@@ -239,6 +239,7 @@ section {
     left: 15%;
 
     width: 500px;
+    margin-top: 60px;
     padding: 68px 40px;
 
     background: @c-dark;
@@ -310,8 +311,8 @@ section {
         position: relative;
         overflow: hidden;
 
-        width: 160px;
-        height: 160px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
         img {
           width: 100%;
@@ -327,7 +328,7 @@ section {
           height: 100%;
           border-radius: 50%;
 
-          opacity: .5;
+          opacity: .35;
           background: linear-gradient(135deg, rgba(0, 86, 255, 1), rgba(0, 242, 212, 1));
 
           content: '';
@@ -363,16 +364,14 @@ section {
 .line {
   padding-top: 120px;
   ol {
-    display: flex;
     overflow: hidden;
 
     flex-direction: column;
 
-    max-width: 100%;
+    max-width: 900px;
     margin-top: 80px;
     li {
       display: flex;
-      overflow: hidden;
 
       flex-direction: row;
 
@@ -500,7 +499,7 @@ section {
   padding-top: 120px;
   img {
     width: 100%;
-    max-width: 640px;
+    max-width: 480px;
     height: 100%;
     margin: 80px auto 0;
   }
@@ -611,7 +610,6 @@ footer {
   }
   .guests {
     ul {
-      display: block;
       li {
         width: 50% !important;
       }
@@ -695,7 +693,7 @@ footer {
     }
     &-content {
       margin: 0;
-      margin: 15px 0 0 15px;
+      margin: 15px 0 0 0;
     }
   }
   .contact {
@@ -726,6 +724,23 @@ footer {
 
     font-size: 16px;
     line-height: 20px;
+  }
+  .guests {
+    ul {
+      li {
+        height: 100%;
+        .avatar {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    &-name {
+      font-size: 16px;
+    }
+    &-desc {
+      font-size: 14px;
+    }
   }
 }
 
