@@ -38,7 +38,7 @@ module.exports = {
         use: [{
           loader: 'url-loader',
           options: { // 这里的options选项参数可以定义多大的图片转换为base64
-            limit: 1024, // 小于5kb的图片转为base64
+            limit: 1024, // 小于1kb的图片转为base64
             outputPath: 'topic/image/' //定义输出的图片文件夹
           }
         }]
