@@ -1,5 +1,5 @@
-import './reset.css'
-import './main.less'
+import '../style/reset.css'
+import '../style/main.less'
 
 function addListener(element, type, callback) {
   if (element.addEventListener) {
@@ -49,7 +49,6 @@ addListener(document, 'DOMContentLoaded', function () {
   })
   var showHeaderLogo = false
   addListener(window,'scroll',function(e){
-    console.log(document.documentElement.scrollTop )
     if(document.documentElement.scrollTop > 1000 && showHeaderLogo === false){
       document.getElementById("header-logo").classList.remove("hidden")
       showHeaderLogo = true

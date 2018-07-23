@@ -22,12 +22,13 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "dircache": "/Data/tools/qshell dircache /Data/work/vote-pc/dist temp.list.txt",
     "upload": "/Data/tools/qshell qupload 10 ./qiniu.config"
   },
